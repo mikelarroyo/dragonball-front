@@ -19,6 +19,8 @@
             <button class="btn btn-ghost btn-xs hover:btn-primary focus:btn-primary" (click)="openModal(episode._id)">Ver detalles</button>
           </td>
         </tr>
+      } @empty {
+        <tr><td colspan="4">No hay episodios</td></tr>
       }
     </tbody>
   </table>
